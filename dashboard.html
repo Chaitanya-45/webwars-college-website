@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/main_style.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+
+<body>
+    
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="image/logo.jpg" class="logo-img"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Admission_page.html">Admissions</a></li>
+                    <li><a href="Scouncil.html">Student Council</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="Login.html">Login</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                </ul>
+            </div> 
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+        </nav>
+       
+        <div class="text-box">
+            <h1>Dashboard</h1>
+            <p>Know more about CMRCET</p>
+        </div>
+    </section>
+
+    <section class="home-section">
+        <div class="home-content">
+            <div class="overview-boxes">
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Companies</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-cart-alt cart'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Total Students</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-add cart two'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">Gallary</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-up-arrow-alt'></i>
+                            <span class="text">Up from yesterday</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-cart cart three'></i>
+                </div>
+                <div class="box">
+                    <div class="right-side">
+                        <div class="box-topic">360 view</div>
+                        <div class="number"></div>
+                        <div class="indicator">
+                            <i class='bx bx-down-arrow-alt down'></i>
+                            <span class="text"></span>
+                        </div>
+                    </div>
+                    <i class='bx bxs-cart-download cart four'></i>
+                </div>
+            </div>
+        </div>
+        <div class="pie-wrap">
+
+            <div class="light-yellow entry">
+                <p>25%</p>
+                <p class="entry-value">Virtusa</p>
+            </div>
+
+            <div class="sky-blue entry">
+                <p>25%</p>
+                <p class="entry-value">TCS</p>
+            </div>
+
+            <div class="pink entry">
+                <p>12.5%</p>
+                <p class="entry-value">Infosys </p>
+            </div>
+
+            <div class="purple entry">
+                <p> 12.5%</p>
+                <p class="entry-value">Capgemini</p>
+            </div>
+
+            <div class="green entry">
+                <p> 12.5%</p>
+                <p class="entry-value">Accenture</p>
+            </div>
+
+            <div class="wheat entry">
+                <p> 12.5%</p>
+                <p class="entry-value">L&T</p>
+            </div>
+
+        </div>
+    </section>
+    <section class="footer">
+        <h4>About Us</h4>
+       <p>The CMR College of Engineering & Technology ccollege at Medchal,Hyderaad provide one of the earliest form of technical studies,
+           which has been vital in setting up the standard of brilliance.</p>
+       
+    </section>
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".sidebarBtn");
+        sidebarBtn.onclick = function() {
+            sidebar.classList.toggle("active");
+            if (sidebar.classList.contains("active")) {
+                sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+            } else
+                sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+        }
+    </script>
+
+</body>
+
+</html>
